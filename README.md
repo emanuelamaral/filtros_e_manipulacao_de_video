@@ -1,6 +1,6 @@
 # Manipulação de Imagem/Video com Python OpenCV
 
-Este é um projeto que utiliza a biblioteca OpenCV em Python para manipulação de imagens e vídeos. Neste trabalho, irei demonstrar como realizar a captura de uma imagem de um vídeo, apresentar a cor quando o mouse for clicado na imagem original, criar duas trackbars que disparam dois filtros passa-baixa em uma das bandas da imagem convertida, aplicar um filtro passa-alta de sua escolha, binarizar a imagem e, por fim, apresentar a imagem resultante.
+Este é um projeto que utiliza a biblioteca OpenCV em Python para manipulação de imagens e vídeos. Neste trabalho, irei demonstrar como realizar a captura de uma imagem de um vídeo, apresentar a cor quando o mouse for clicado na imagem original, criar duas trackbars que disparam dois filtros passa-baixa em uma das bandas da imagem convertida, aplicar um filtro passa-alta, binarizar a imagem e, por fim, apresentar a imagem resultante.
 
 # Sobre o trabalho:
 - Disciplina: OP63I-CC8 - Processamento de Imagens e Reconhecimento de Padrões
