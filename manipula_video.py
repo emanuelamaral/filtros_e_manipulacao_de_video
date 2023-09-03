@@ -71,6 +71,7 @@ class ProcessamentoDeVideo:
             # Ao pressionar a tecla 'c' é feito uma captura do video e salvando o frame em um arquivo .png
 
             if tecla == ord('c'):
+                cv2.destroyWindow("Imagem Capturada")
                 self.imagem_capturada = frame_video.copy()
                 cv2.imshow("Imagem Capturada", self.imagem_capturada)
                 cv2.imwrite("captura_do_frame.png", self.imagem_capturada)
