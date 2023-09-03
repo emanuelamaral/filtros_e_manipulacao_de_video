@@ -11,6 +11,7 @@ class ProcessamentoDeVideo:
         self.kernel_size_atual = 1
         self.limiar_inferior_canny = 50
         self.limiar_superior_canny = 150
+        self.threshold = 128
 
     def capturar_cor(self, event, x, y, flags, param):
         if event == cv2.EVENT_LBUTTONDOWN:
@@ -52,6 +53,10 @@ class ProcessamentoDeVideo:
         edges = cv2.Canny(self.imagem_capturada, self.limiar_inferior_canny, self.limiar_superior_canny, apertureSize=3, L2gradient=False)
         cv2.imshow("Imagem Capturada", edges)
 
+    def ajustar_threshold(self, valor):
+        _, imagem_binaria = cv2.threshold(self.imagem_capturada, valor, 255, cv2.THRESH_BINARY)
+        cv2.imshow("Imagem Capturada", imagem_binaria)
+
     def rodar_video(self):
         video = cv2.VideoCapture(self.video_filename)
         cv2.namedWindow('Video', 1)
@@ -89,8 +94,10 @@ class ProcessamentoDeVideo:
                 cv2.createTrackbar("Limiar Inferior Canny", "Imagem Capturada", self.limiar_inferior_canny, 255, self.alterar_limiar_inferior)
                 cv2.createTrackbar("Limiar Superior Canny", "Imagem Capturada", self.limiar_superior_canny, 255, self.alterar_limiar_superior)
 
-                # Pausa o video de fundo até a tecla 'q' ser pressionada
+                # Cria um trackbar para o valor do threshold (binarizar a imagem)
+                cv2.createTrackbar("Threshold", "Imagem Capturada", self.threshold, 255, self.ajustar_threshold)
 
+                # Pausa o video de fundo até a tecla 'q' ser pressionada
                 #
                 # while True:
                 #     key = cv2.waitKey(1) & 0xFF
