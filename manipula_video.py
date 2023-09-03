@@ -66,24 +66,6 @@ def atualizar_filtro_canny():
     cv2.imshow("Imagem Capturada", edges)
 
 
-def processa_frame(imagem):
-    cv2.imshow("Imagem Capturada", imagem)
-    cv2.imwrite("captura_do_frame.png", imagem)
-
-    # Configurar o evento de clique do mouse para a imagem capturada
-    cv2.setMouseCallback("Imagem Capturada", capturar_cor)
-
-    # Cria uma trackbar para ajustar o Sigma na imagem captura e aplicar o filtro Gaussian Blur
-    cv2.createTrackbar("Sigma", "Imagem Capturada", sigma_atual, 50, gaussian_blur)
-
-    # Cria um trackbar para ajusatar o valor do kernel size do filtro Median Blur
-    cv2.createTrackbar("Kernel Size", "Imagem Capturada", kernel_size_atual, 50, median_blur)
-
-    # Cria dois trackbars: um para threshold1 (lower) e o outro para threshold2 (upper)
-    cv2.createTrackbar("Limiar Inferior Canny", "Imagem Capturada", limiar_inferior_canny, 255, alterar_limiar_inferior)
-    cv2.createTrackbar("Limiar Superior Canny", "Imagem Capturada", limiar_superior_canny, 255, alterar_limiar_superior)
-
-
 def rodar_video():
     global imagem_capturada
 
@@ -108,9 +90,29 @@ def rodar_video():
 
         if tecla == ord('c'):
             imagem_capturada = frame_video.copy()
-            processa_frame(imagem_capturada)
+            cv2.imshow("Imagem Capturada", imagem_capturada)
+            cv2.imwrite("captura_do_frame.png", imagem_capturada)
+
+            # Configurar o evento de clique do mouse para a imagem capturada
+            cv2.setMouseCallback("Imagem Capturada", capturar_cor)
+
+            # cv2.createTrackbar("Brilho", "Imagem Capturada", brilho_atual, 100, ajustar_brilho)
+
+            # Cria uma trackbar para ajustar o Sigma na imagem captura e aplicar o filtro Gaussian Blur
+            cv2.createTrackbar("Sigma", "Imagem Capturada", sigma_atual, 50, gaussian_blur)
+
+            # Cria um trackbar para ajusatar o valor do kernel size do filtro Median Blur
+            cv2.createTrackbar("Kernel Size", "Imagem Capturada", kernel_size_atual, 50, median_blur)
+
+            # Cria dois trackbars: um para threshold1 (lower) e o outro para threshold2 (upper)
+
+            cv2.createTrackbar("Limiar Inferior Canny", "Imagem Capturada", limiar_inferior_canny, 255, alterar_limiar_inferior)
+            cv2.createTrackbar("Limiar Superior Canny", "Imagem Capturada", limiar_superior_canny, 255, alterar_limiar_superior)
+
+            atualizar_filtro_canny()
 
             # Pausa o video de fundo até a tecla 'q' ser pressionada
+
             #
             # while True:
             #     key = cv2.waitKey(1) & 0xFF
