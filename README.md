@@ -1,11 +1,16 @@
+Claro, vou ajudar a adicionar as instruções de uso ao README com base nas informações que você forneceu:
+
+```markdown
 # Manipulação de Imagem/Video com Python OpenCV
 
-Este é um projeto que utiliza a biblioteca OpenCV em Python para manipulação de imagens e vídeos. Neste trabalho, irei demonstrar como realizar a captura de uma imagem de um vídeo, apresentar a cor quando o mouse for clicado na imagem original, criar duas trackbars que disparam dois filtros passa-baixa em uma das bandas da imagem convertida, aplicar um filtro passa-alta, binarizar a imagem e, por fim, apresentar a imagem resultante.
+Este é um projeto que utiliza a biblioteca OpenCV em Python para manipulação de imagens e vídeos. Neste trabalho, irei demonstrar como realizar a captura de uma imagem de um vídeo, apresentar a cor quando o mouse for clicado na imagem original, criar trackbars que disparam dois filtros passa-baixa em uma das bandas da imagem convertida, aplicar um filtro passa-alta, binarizar a imagem e, por fim, apresentar a imagem resultante.
 
-# Sobre o trabalho:
+## Sobre o trabalho
+
 - Disciplina: OP63I-CC8 - Processamento de Imagens e Reconhecimento de Padrões
-- Turma: 2023/2 - 8° Periodo
+- Turma: 2023/2 - 8° Período
 - Professor: Pedro Luiz de Paula Filho
+
 ## Pré-requisitos e Instalação no Linux
 
 ### Python (versão recomendada: 3.11 ou superior)
@@ -47,7 +52,7 @@ sudo pacman -Sy pycharm-community
 
 ### OpenCV
 
-Você pode instalar o OpenCV via pip, o gerenciador de pacotes de pacotes Python:
+Você pode instalar o OpenCV via pip, o gerenciador de pacotes Python:
 
 ```bash
 pip install opencv-python
@@ -60,8 +65,6 @@ NumPy é uma biblioteca amplamente usada para computação numérica em Python. 
 ```bash
 pip install numpy
 ```
-
----
 
 ## Pré-requisitos e Instalação no Windows
 
@@ -105,6 +108,22 @@ git clone https://github.com/seuusuario/python-opencv-trabalho.git
 
 2. Abra o projeto no PyCharm (ou sua IDE preferida).
 
+## Modo de Uso
+
+1. **Captura de Imagem:** Pressione a tecla `c` para capturar uma imagem do vídeo. A imagem capturada será exibida em uma nova janela.
+
+2. **Aplicação de Filtros:**
+
+   - Utilize as trackbars para ajustar os filtros passa-baixa.
+   - Para aplicar um filtro passa-alta, utilize os trackbars limiar superior e limiar inferior.
+   - Para binarizar a imagem, o trackbar threshold.
+
+3. **Mostrar Cores no Clique:**
+
+   - Clique na imagem capturada e as cores no ponto clicado serão exibidas no console.
+
+4. **Sair do Programa:** Pressione a tecla `Esc` para sair do programa.
+
 ## Autores
 
 - Amoz Emanuel
@@ -118,3 +137,6 @@ git clone https://github.com/seuusuario/python-opencv-trabalho.git
 ## Licença
 
 Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+```
+
+Certifique-se de adaptar as instruções de uso para refletir a lógica específica do seu código, pois as funcionalidades de trackbars e detecção de cores no clique podem requerer uma implementação personalizada.
