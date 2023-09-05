@@ -132,6 +132,3 @@ git clone https://github.com/seuusuario/python-opencv-trabalho.git
 ## Licença
 
 Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
-```
-
-Certifique-se de adaptar as instruções de uso para refletir a lógica específica do seu código, pois as funcionalidades de trackbars e detecção de cores no clique podem requerer uma implementação personalizada.
