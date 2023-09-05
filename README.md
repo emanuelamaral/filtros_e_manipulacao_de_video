@@ -105,16 +105,6 @@ git clone https://github.com/seuusuario/python-opencv-trabalho.git
 
 2. Abra o projeto no PyCharm (ou sua IDE preferida).
 
-3. Execute o script `captura_imagem.py` para capturar uma imagem de um vídeo em execução. Este script abrirá uma janela de vídeo e você pode clicar em qualquer ponto da imagem para ver a cor correspondente.
-
-4. Execute o script `filtro_passa_baixa.py` para aplicar dois filtros passa-baixa à imagem capturada. Duas trackbars permitirão ajustar os parâmetros desses filtros.
-
-5. Execute o script `filtro_passa_alta.py` para aplicar um filtro passa-alta à imagem.
-
-6. Execute o script `binarizacao.py` para binarizar a imagem resultante.
-
-7. Os resultados finais serão exibidos em janelas separadas para cada etapa do processamento.
-
 ## Autores
 
 - Amoz Emanuel
