@@ -59,7 +59,7 @@ class ProcessamentoDeVideo:
 
     def rodar_video(self):
         video = cv2.VideoCapture(self.video_filename)
-        cv2.namedWindow('Video', 1)
+        cv2.namedWindow('Video', cv2.WINDOW_AUTOSIZE)
         tecla = 0
 
         # Deixa o video em um loop infinito até a tecla 'ESC' ser pressionada
