@@ -1,6 +1,3 @@
-Claro, vou ajudar a adicionar as instruções de uso ao README com base nas informações que você forneceu:
-
-```markdown
 # Manipulação de Imagem/Video com Python OpenCV
 
 Este é um projeto que utiliza a biblioteca OpenCV em Python para manipulação de imagens e vídeos. Neste trabalho, irei demonstrar como realizar a captura de uma imagem de um vídeo, apresentar a cor quando o mouse for clicado na imagem original, criar trackbars que disparam dois filtros passa-baixa em uma das bandas da imagem convertida, aplicar um filtro passa-alta, binarizar a imagem e, por fim, apresentar a imagem resultante.
@@ -17,22 +14,20 @@ Este é um projeto que utiliza a biblioteca OpenCV em Python para manipulação 
 
 A maioria das distribuições Linux já vem com o Python instalado. Para verificar se o Python está instalado, abra o terminal e digite:
 
-```bash
-python3 --version
-```
+`python3 --version`
 
 Se não estiver instalado, você pode instalá-lo usando o gerenciador de pacotes da sua distribuição. Por exemplo, no Ubuntu/Debian:
 
-```bash
+`
 sudo apt-get update
 sudo apt-get install python3
-```
+`
 
 No Arch Linux:
 
-```bash
+`
 sudo pacman -Sy python
-```
+`
 
 ### PyCharm (ou qualquer outra IDE de sua escolha)
 
@@ -40,31 +35,31 @@ Você pode baixar o PyCharm diretamente do site oficial da JetBrains (https://ww
 
 #### Ubuntu/Debian:
 
-```bash
+`
 sudo snap install pycharm-community --classic
-```
+`
 
 #### Arch Linux:
 
-```bash
+`
 sudo pacman -Sy pycharm-community
-```
+`
 
 ### OpenCV
 
 Você pode instalar o OpenCV via pip, o gerenciador de pacotes Python:
 
-```bash
+`
 pip install opencv-python
-```
+`
 
 ### NumPy
 
 NumPy é uma biblioteca amplamente usada para computação numérica em Python. Você pode instalá-lo via pip:
 
-```bash
+`
 pip install numpy
-```
+`
 
 ## Pré-requisitos e Instalação no Windows
 
@@ -86,25 +81,25 @@ Você pode instalar o OpenCV via pip, o gerenciador de pacotes de pacotes Python
 
 Abra o prompt de comando (cmd) e execute:
 
-```bash
+`
 pip install opencv-python
-```
+`
 
 ### NumPy
 
 NumPy é uma biblioteca amplamente usada para computação numérica em Python. Você pode instalá-lo via pip:
 
-```bash
+`
 pip install numpy
-```
+`
 
 ## Executando o Projeto
 
 1. Clone este repositório em seu sistema:
 
-```bash
+`
 git clone https://github.com/seuusuario/python-opencv-trabalho.git
-```
+`
 
 2. Abra o projeto no PyCharm (ou sua IDE preferida).
 
