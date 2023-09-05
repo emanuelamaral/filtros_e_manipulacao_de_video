@@ -61,30 +61,6 @@ NumPy é uma biblioteca amplamente usada para computação numérica em Python. 
 pip install numpy
 ```
 
-### Matplotlib
-
-Matplotlib é uma biblioteca para criação de gráficos em Python. Você pode instalá-lo via pip:
-
-```bash
-pip install matplotlib
-```
-
-### Tkinter
-
-Tkinter é uma biblioteca para criação de interfaces gráficas em Python. Muitas distribuições Linux já incluem o Tkinter por padrão. Se não estiver disponível, você pode instalá-lo usando o gerenciador de pacotes da sua distribuição:
-
-#### Ubuntu/Debian:
-
-```bash
-sudo apt-get install python3-tk
-```
-
-#### Arch Linux:
-
-```bash
-sudo pacman -Sy tk
-```
-
 ---
 
 ## Pré-requisitos e Instalação no Windows
